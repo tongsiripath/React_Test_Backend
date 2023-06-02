@@ -20,7 +20,8 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(
     cors({
-        origin: "http://localhost:3000", //เปลี่ยนไปตาม Port ที่สตาร์ทได้
+        //origin: "http://localhost:3000", //เปลี่ยนไปตาม Port ที่สตาร์ทได้
+        origin: "http://tongsiripath.mypressonline.com",
     })
 );
 app.use(cookieParser());
